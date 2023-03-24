@@ -1,0 +1,11 @@
+.container{
+    border: 5px solid blue;
+}
+.box-1{
+    min-height: 250px;
+    background: yellow;
+}
+.box-2{
+    min-height: 250px;
+    background: rgb(215, 56, 135);
+}

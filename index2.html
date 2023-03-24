@@ -1,0 +1,63 @@
+<!--Part-6:- offset class:- when we want to keep the content in left, center, right etc-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> <!--for this line bootstrap webpage is responsive-->
+    <title>Bootstrap 5 Tutorial</title>
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.css"> <!--bootstrap.css is general css file of bootstrap-->
+    <link rel="stylesheet" href="style2.css"> <!--custom css file link-->
+</head>
+<body>
+    <!--to make column1 in left hand side-->
+    <div class="container">
+        <div class="row">
+            <div class="col-4 box-1">column1</div>
+        </div>
+    </div>
+    <!--to make column2 in center but without responsive-->
+    <div class="container">
+        <div class="row">
+            <div class="col-4 offset-4 box-1">column2</div>
+        </div>
+    </div>
+    <!--to make column2 in center with responsive-->
+    <div class="container">
+        <div class="row">
+            <!--it'll work for higher size screen than md but when it'll touch sm it'll not work-->
+            <div class="col-md-4 offset-md-4 box-1">column2</div>
+        </div>
+    </div>
+    <!--to make column3 in center with responsive-->
+    <div class="container">
+        <div class="row">
+            <!--it'll work for higher size screen than sm but when it'll touch xs it'll not work-->
+            <div class="col-sm-4 offset-sm-4 col-md-4 offset-md-4 box-1">column3</div>
+        </div>
+    </div>
+    <!--to make column4 in center with responsive-->
+    <div class="container">
+        <div class="row">
+            <!--to make the column4 in left side in large screen-->
+            <div class="col-sm-4 offset-sm-4 col-md-4 offset-md-4 col-lg-4 offset-lg-0 box-1">column4</div>
+        </div>
+    </div>
+    <!--to keep two columns and between those ome spaces should left with responsive-->
+    <div class="container">
+        <div class="row">
+            <!--to make the column4 in left side in large screen-->
+            <div class="col-lg-4 offset-lg-2 box-1">column5</div><!--4+2=6-->
+            <div class="col-lg-4 offset-lg-2 box-2">column6</div><!--4+2=6-->
+            <!--so total 6+6=12 so it'll come in single line-->
+        </div>
+    </div>
+    <!--to keep column7 in right with responsive-->
+    <div class="container">
+        <div class="row">
+            <!--to make the column4 in right side in large screen-->
+            <div class="col-lg-4 offset-lg-8 box-1">column7</div><!--4+8=12-->
+        </div>
+    </div>
+</body>
+</html>

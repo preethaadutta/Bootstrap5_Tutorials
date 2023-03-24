@@ -1,0 +1,68 @@
+<!--Part-9:- Margin classes-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> <!--for this line bootstrap webpage is responsive-->
+    <title>Bootstrap 5 Tutorial</title>
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.css"> <!--bootstrap.css is general css file of bootstrap-->
+    <link rel="stylesheet" href="style5.css"> <!--custom css file link-->
+</head>
+<body>
+    <!--To bring the div in center:- m-auto -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 box-1 m-auto">column1</div>
+            <!--<div class="col-md-4 box-1 mx-auto">column1</div>-->
+        </div>
+    </div>
+    <!--if we want to bring the div in center for only md:- m-md-auto -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 box-1 m-md-auto">column2</div>
+        </div>
+    </div>
+    <!--if we want to bring the div left to right:- ms-auto -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 box-1 ms-auto">column3</div>
+        </div>
+    </div>
+    <!--if we want to bring the div left to right for only sm:- ms-sm-auto -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 box-1 ms-sm-auto">column4</div>
+        </div>
+    </div>
+    <!--if we want to bring the div right to left:- me-auto -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 box-1 me-auto">column5</div>
+        </div>
+    </div>
+    <!--if we want to bring the div right to left for only sm:- me-sm-auto -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 box-1 me-sm-auto">column6</div>
+        </div>
+    </div>
+
+    <!--if we want to give margin from top in column7:- mt-5 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 box-3 mt-5">column7</div> <!--will show same for all screen size-->
+            <div class="col-lg-4 box-2 mt-lg-5">column8</div> <!--will show different in lg-->
+        </div>
+    </div>
+
+    <!--if we want to give margin from bottom in column9:- mb-5 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 box-3 mb-5">column7</div> <!--will show same for all screen size-->
+            <div class="col-lg-4 box-2 mb-lg-5">column8</div> <!--will show different in lg-->
+        </div>
+    </div>
+
+</body>
+</html>

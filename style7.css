@@ -1,0 +1,33 @@
+.container{
+    border: 5px solid blue;
+}
+.container-fluid{
+    border: 5px solid rgb(12, 104, 129);
+}
+.row{
+    border: 10px solid orange;
+}
+.box-1{
+    
+    background: yellow;
+}
+.box-2{
+    
+    background: rgb(215, 56, 135);
+}
+.box-3{
+    
+    background: rgb(162, 154, 215);
+}
+.box-4{
+    
+    background: rgb(70, 171, 196);
+}
+.box-5{
+    
+    background: rgb(52, 193, 75);
+}
+.box-6{
+    min-height: 250px;
+    background: rgb(223, 136, 142);
+}

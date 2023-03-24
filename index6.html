@@ -1,0 +1,110 @@
+<!--Part-10:- Padding classes-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> <!--for this line bootstrap webpage is responsive-->
+    <title>Bootstrap 5 Tutorial</title>
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.css"> <!--bootstrap.css is general css file of bootstrap-->
+    <link rel="stylesheet" href="style6.css"> <!--custom css file link-->
+</head>
+<body>
+    <!--Without padding-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 box-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quaerat accusantium dolores fuga commodi aspernatur eius cupiditate libero quam itaque, fugiat vel quae expedita dignissimos repellendus minus culpa optio harum.</div>
+            <div class="col-md-4 box-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique consectetur aspernatur quas, ullam sint veniam, voluptatum nesciunt eveniet totam quam amet, ipsam ipsa at nostrum reprehenderit ex corporis. Quasi, ipsa.</div>
+        </div>
+    </div>
+    <!--With padding:- p-* -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 box-1 p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quaerat accusantium dolores fuga commodi aspernatur eius cupiditate libero quam itaque, fugiat vel quae expedita dignissimos repellendus minus culpa optio harum.</div>
+            <div class="col-md-4 box-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique consectetur aspernatur quas, ullam sint veniam, voluptatum nesciunt eveniet totam quam amet, ipsam ipsa at nostrum reprehenderit ex corporis. Quasi, ipsa.</div>
+        </div>
+    </div>
+    <!--if we want to give padding for only md:- p-md-* -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 box-1 p-md-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quaerat accusantium dolores fuga commodi aspernatur eius cupiditate libero quam itaque, fugiat vel quae expedita dignissimos repellendus minus culpa optio harum.</div>
+            <div class="col-md-4 box-2 p-md-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique consectetur aspernatur quas, ullam sint veniam, voluptatum nesciunt eveniet totam quam amet, ipsam ipsa at nostrum reprehenderit ex corporis. Quasi, ipsa.</div>
+        </div>
+    </div>
+    <!--by the bellow code padding will be removed when it'll switch from lg to md:- p-lg-* -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 box-1 p-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quaerat accusantium dolores fuga commodi aspernatur eius cupiditate libero quam itaque, fugiat vel quae expedita dignissimos repellendus minus culpa optio harum.</div>
+            <div class="col-md-4 box-2 p-lg-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique consectetur aspernatur quas, ullam sint veniam, voluptatum nesciunt eveniet totam quam amet, ipsam ipsa at nostrum reprehenderit ex corporis. Quasi, ipsa.</div>
+        </div>
+    </div>
+    <!--padding class can be used with any class like row, container etc-->
+    <div class="container p-lg-5">
+        <div class="row p-lg-5">
+            <div class="col-md-4 box-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quaerat accusantium dolores fuga commodi aspernatur eius cupiditate libero quam itaque, fugiat vel quae expedita dignissimos repellendus minus culpa optio harum.</div>
+            <div class="col-md-4 box-2 p-lg-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique consectetur aspernatur quas, ullam sint veniam, voluptatum nesciunt eveniet totam quam amet, ipsam ipsa at nostrum reprehenderit ex corporis. Quasi, ipsa.</div>
+        </div>
+    </div>
+    <!--padding from right:- pe-* -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 box-1 pe-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quaerat accusantium dolores fuga commodi aspernatur eius cupiditate libero quam itaque, fugiat vel quae expedita dignissimos repellendus minus culpa optio harum.</div>
+            <div class="col-md-4 box-2 pe-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique consectetur aspernatur quas, ullam sint veniam, voluptatum nesciunt eveniet totam quam amet, ipsam ipsa at nostrum reprehenderit ex corporis. Quasi, ipsa.</div>
+        </div>
+    </div>
+    <!--padding from left:- ps-* -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 box-1 ps-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quaerat accusantium dolores fuga commodi aspernatur eius cupiditate libero quam itaque, fugiat vel quae expedita dignissimos repellendus minus culpa optio harum.</div>
+            <div class="col-md-4 box-2 ps-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique consectetur aspernatur quas, ullam sint veniam, voluptatum nesciunt eveniet totam quam amet, ipsam ipsa at nostrum reprehenderit ex corporis. Quasi, ipsa.</div>
+        </div>
+    </div>
+    <!--padding from top:- pt-* -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 box-1 pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quaerat accusantium dolores fuga commodi aspernatur eius cupiditate libero quam itaque, fugiat vel quae expedita dignissimos repellendus minus culpa optio harum.</div>
+            <div class="col-md-4 box-2 pt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique consectetur aspernatur quas, ullam sint veniam, voluptatum nesciunt eveniet totam quam amet, ipsam ipsa at nostrum reprehenderit ex corporis. Quasi, ipsa.</div>
+        </div>
+    </div>
+    <!--padding from bottom:- pb-* -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 box-1 pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quaerat accusantium dolores fuga commodi aspernatur eius cupiditate libero quam itaque, fugiat vel quae expedita dignissimos repellendus minus culpa optio harum.</div>
+            <div class="col-md-4 box-2 pb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique consectetur aspernatur quas, ullam sint veniam, voluptatum nesciunt eveniet totam quam amet, ipsam ipsa at nostrum reprehenderit ex corporis. Quasi, ipsa.</div>
+        </div>
+    </div>
+    <!--by the bellow code padding will be removed when it'll switch from lg to md:- pt-lg-* -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 box-1 pt-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quaerat accusantium dolores fuga commodi aspernatur eius cupiditate libero quam itaque, fugiat vel quae expedita dignissimos repellendus minus culpa optio harum.</div>
+            <div class="col-md-4 box-2 pt-lg-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique consectetur aspernatur quas, ullam sint veniam, voluptatum nesciunt eveniet totam quam amet, ipsam ipsa at nostrum reprehenderit ex corporis. Quasi, ipsa.</div>
+        </div>
+    </div>
+    <!--padding from both left and right means vertically means x-axis:- px-* -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 box-1 px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quaerat accusantium dolores fuga commodi aspernatur eius cupiditate libero quam itaque, fugiat vel quae expedita dignissimos repellendus minus culpa optio harum.</div>
+            <div class="col-md-4 box-2 px-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique consectetur aspernatur quas, ullam sint veniam, voluptatum nesciunt eveniet totam quam amet, ipsam ipsa at nostrum reprehenderit ex corporis. Quasi, ipsa.</div>
+        </div>
+    </div>
+    <!--padding from both top and bottom means horizontally means y-axis:- py-* -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 box-1 py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quaerat accusantium dolores fuga commodi aspernatur eius cupiditate libero quam itaque, fugiat vel quae expedita dignissimos repellendus minus culpa optio harum.</div>
+            <div class="col-md-4 box-2 py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique consectetur aspernatur quas, ullam sint veniam, voluptatum nesciunt eveniet totam quam amet, ipsam ipsa at nostrum reprehenderit ex corporis. Quasi, ipsa.</div>
+        </div>
+    </div>
+    <!--by the bellow code padding will be removed when it'll switch to md:- py-md-* -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 box-1 py-md-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quaerat accusantium dolores fuga commodi aspernatur eius cupiditate libero quam itaque, fugiat vel quae expedita dignissimos repellendus minus culpa optio harum.</div>
+            <div class="col-md-4 box-2 py-md-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique consectetur aspernatur quas, ullam sint veniam, voluptatum nesciunt eveniet totam quam amet, ipsam ipsa at nostrum reprehenderit ex corporis. Quasi, ipsa.</div>
+        </div>
+    </div>
+
+
+
+
+    
+</body>
+</html>

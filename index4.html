@@ -1,0 +1,64 @@
+<!--Part-8:- Nesting classes-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> <!--for this line bootstrap webpage is responsive-->
+    <title>Bootstrap 5 Tutorial</title>
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.css"> <!--bootstrap.css is general css file of bootstrap-->
+    <link rel="stylesheet" href="style4.css"> <!--custom css file link-->
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 box-1">column1</div>
+            <div class="col-lg-6 box-2">column2</div>
+        </div>
+    </div>
+    <!--use of nesting class-->
+    <!--if we want to take 2 columns inside column-1 
+        so total grids/number of columns=12/2=6 so col-md-6-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 box-1">column1
+                <div class="row">
+                    <div class="col-md-6 box-3">column1a</div>
+                    <div class="col-md-6 box-4">column1b</div>
+                </div>
+            </div>
+            <div class="col-lg-6 box-2">column2</div>
+        </div>
+    </div>
+    <!--if we want to take 4 columns inside column-1
+    so total grids/number of columns=12/4=3 so col-md-3 and it'll be not show same for all devices so with responsive-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 box-1">column1
+                <div class="row">
+                    <div class="col-md-3 box-3">column1a</div>
+                    <div class="col-md-3 box-4">column1b</div>
+                    <div class="col-md-3 box-5">column1c</div>
+                    <div class="col-md-3 box-6">column1d</div>
+                </div>
+            </div>
+            <div class="col-lg-6 box-2">column2</div>
+        </div>
+    </div>
+    <!--if we want to take 4 columns inside column-1
+    so total grids/number of columns=12/4=3 so col-md-3 and it'll show same for all devices so without responsive-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 box-1">column2
+                <div class="row">
+                    <div class="col-3 box-3">column2a</div>
+                    <div class="col-3 box-4">column2b</div>
+                    <div class="col-3 box-5">column2c</div>
+                    <div class="col-3 box-6">column2d</div>
+                </div>
+            </div>
+            <div class="col-lg-6 box-2">column3</div>
+        </div>
+    </div>
+</body>
+</html>

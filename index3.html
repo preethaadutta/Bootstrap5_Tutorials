@@ -1,0 +1,54 @@
+<!--Part-7:- Reordering classes-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> <!--for this line bootstrap webpage is responsive-->
+    <title>Bootstrap 5 Tutorial</title>
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.css"> <!--bootstrap.css is general css file of bootstrap-->
+    <link rel="stylesheet" href="style3.css"> <!--custom css file link-->
+</head>
+<body>
+    <!--Before using reordering class-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 box-1">column1</div>
+            <div class="col-lg-4 box-2">column2</div>
+            <div class="col-lg-4 box-3">column3</div>
+        </div>
+    </div>
+    <!--if we want to rearrange the boxes-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 box-1 order-last">column4</div>
+            <div class="col-lg-4 box-2">column5</div>
+            <div class="col-lg-4 box-3 order-first">column6</div>
+        </div>
+    </div>
+    <!--if we want to rearrange the boxes for lg screen size devices-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 box-1">column7</div>
+            <div class="col-lg-4 box-2 order-lg-last">column8</div>
+            <div class="col-lg-4 box-3 order-lg-first">column9</div>
+        </div>
+    </div>
+    <!--more methods to rearrange the boxes:-writing order with numbers. This will show same for all devices-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 box-1 order-2">column10</div>
+            <div class="col-sm-4 box-2 order-3">column11</div>
+            <div class="col-sm-4 box-3 order-1">column12</div>
+        </div>
+    </div>
+    <!--if we want to rearrange the boxes for sm screen size devices-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 box-1 order-sm-2">column13</div>
+            <div class="col-sm-4 box-2 order-sm-3">column14</div>
+            <div class="col-sm-4 box-3 order-sm-1">column15</div>
+        </div>
+    </div>
+</body>
+</html>
