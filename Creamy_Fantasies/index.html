@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creamy Fantasies || Creamy Love</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top" id="nav">
+            <div class="container">
+                <a class="navbar-brand" href="#home"><img src="images/Logo_img.png" alt="" width="60px" height="60px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" id="homemenu">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" id="aboutmenu">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#flavours" id="flavoursmenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Flavours</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#flavours">Straberry</a></li>
+                                <li><a class="dropdown-item" href="#flavours">Chocolate</a></li>
+                                <li><a class="dropdown-item" href="#flavours">Vanilla</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#flavours">Mango</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Locate Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <section id="home">
+            <div class="container" id="section2">
+                <div id="div1">
+                    <h1>Creamy Fantasies</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam recusandae inventore soluta asperiores, voluptates vitae quia veniam corporis laborum facere optio et in voluptate eos quasi, ex doloremque temporibus? Numquam consequuntur, molestiae impedit iure veniam unde repudiandae omnis cupiditate. Delectus perferendis temporibus voluptate excepturi maiores blanditiis enim voluptatem necessitatibus est debitis. Sunt quidem praesentium debitis!
+                    </p>
+                    <div>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/straberry_icecream.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </section>
+    </header>
+    
+    <!--<section style="height: 100vh;background:chocolate;"></section>-->
+    <section id="flavours">
+        <div class="container" id="section3">
+            <h2>Flavours</h2>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <!--<img src="" />-->
+                        <div id="slide1">
+                            <img src="images/straberry_icecream.png" class="img-fluid" height="260px"/> <!--height="260px"-->
+                            <button>Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <!--<img src="images/chocolate_slider4.png" />-->
+                        <div id="slide2">
+                            <img src="images/chocolate_ice_cream_rbg1.png" class="img-fluid" height="260px"/> <!--height="260px"-->
+                            <button>Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <!--<img src="images/mango_slider1.png" />-->
+                        <div id="slide3">
+                            <img src="images/mango_ice_cream1_rbg.png" class="img-fluid" height="260px"/> <!--height="260px"-->
+                            <button>Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <!--<img src="https://swiperjs.com/demos/images/nature-4.jpg" />-->
+                        <div id="slide4">
+                            <img src="images/vanilla_ice_cream2_rbg.png" class="img-fluid" height="260px"/> <!--height="260px"-->
+                            <button>Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- If we need scrollbar -->
+                <!--<div class="swiper-scrollbar"></div>-->
+            </div>
+        </div>
+        
+
+    </section>
+    <section style="height: 100vh;background:rgb(30, 208, 235);" id="about"></section>
+    <footer>
+        <div id="footer_section">
+            <div class="container">
+                <div class="footer_logo">
+                    <a href="#"><img src="images/Logo_img.png" alt="" width="80px" height="80px"></a>
+                    <h1>Creamy Fantasies</h1>
+                </div>
+                <!--<div class="social_icons">
+                    <h3>Follow Us</h3>
+                    <div>
+
+                    </div>
+                </div>-->
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p>All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

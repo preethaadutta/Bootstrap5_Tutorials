@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #FFC8E9;
+}
+.navbar{
+    /*background-color: aqua;*/
+    /*background: linear-gradient(to bottom,rgba(255, 255, 255, 0.241),#ff77b95e);*/
+    background-color: #ffffff4e;
+    backdrop-filter: blur(5px);
+    --bs-navbar-color: #000;/*changing font color*/
+    --bs-navbar-hover-color: #D71E77;
+    --bs-navbar-active-color: #D71E77;
+    --bs-navbar-padding-y: 0.2rem;
+
+    border-top: 2px solid #D71E77;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.navbar-brand{
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #D71E77;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Lobster Two", sans-serif;
+    letter-spacing: 1px;
+}
+.navbar-brand:hover{
+    color: #9e0b52;
+}
+.nav-item{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Lobster Two", sans-serif;
+    letter-spacing: 1px;
+}
+.dropdown-menu{
+    /*background: linear-gradient(to bottom,rgb(213, 80, 250),rgb(252, 87, 175));*/
+    background-color: #ffffff4e;
+    backdrop-filter: blur(5px);
+    border: none;
+    border-radius: 0;
+
+    border-top: 2px solid #D71E77;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.dropdown-item{
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Lobster Two", sans-serif;
+    letter-spacing: 1px;
+}
+.dropdown-item:hover {
+    color: #D71E77;
+    background-color: transparent;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 115%;
+}
+.me-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5px;
+    color: var(--bs-body-color);
+    color: #000;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /*background-color: var(--bs-body-bg);*/
+    background-color: transparent;
+    background-clip: padding-box;
+    border: none;
+    border-bottom: 2px solid #000;
+    border-radius: 0;
+    /*transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;*/
+}
+.form-control:focus,.form-control:active{
+    border-bottom: 2px solid #D71E77;
+}
+/*
+input{
+    color: #FFD43B;
+}
+input[type="search"]{
+    color: #FFD43B;
+}
+*/
+input[type="search"]{
+    color: #000;
+}
+input[type="search"]{
+    caret-color: #D71E77;
+}
+input[type="search"]::placeholder {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Lobster Two", sans-serif;
+    letter-spacing: 1px;
+}
+/*to remove ugly blue line that comes with each input feild in Bootstrap*/
+input:focus,input:active {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+/*hamburgur menu customisation*/
+.navbar-toggler{
+    border: none;
+    outline: none;
+}
+.navbar-toggler:focus
+{
+    outline: none !important;
+    box-shadow: none !important;
+}
+/*removing default hamburgur menu*/
+.navbar-toggler-icon{
+    background-image: none;
+    display: flex;
+    align-items: center;
+}
+.navbar-toggler-icon>i{
+    color: #000;
+}
+.navbar-toggler-icon>i:hover{
+    color: #D71E77;
+}
+.btn{
+    border: none;
+    color: #000;
+}
+.btn>i{
+    color: #000;
+}
+.btn>i:hover{
+    background-color: transparent;
+    color: #D71E77;
+}
+/*
+#div1{
+    background: url("images/large_vector.png");
+}
+*/
+#section2{
+    display: flex;justify-content:center;/*align-items:center;*/
+    background: url("images/desktop_bg_modified.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+#section2>div:nth-child(1){
+    width: 50vw;
+    padding-top: 160px;
+    padding-left: 25px;
+}
+#section2>div:nth-child(1)>h1{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Lobster Two", sans-serif;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+}
+#section2>div:nth-child(1)>p{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Lobster Two", sans-serif;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+}
+#section2>div:nth-child(1)>div{
+    background: transparent;
+}
+#section2>div:nth-child(1)>div>button{
+    border: none;
+    padding: 10px;
+    background: transparent;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Lobster Two", sans-serif;
+    letter-spacing: 1px;
+}
+#section2>div:nth-child(1)>div>button:hover{
+    color: #D71E77;
+    border-top: 2px solid #D71E77;
+    padding-top: 8px;
+    background: #ffffff4e;
+    backdrop-filter: blur(5px);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#section2>div:nth-child(2){
+    padding-top: 20px;
+}
+@media screen and (max-width:992px){
+    #section2{
+        background: url("images/mobile_bg1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex-direction: column-reverse;
+        background-attachment: fixed;
+        height: 180vh;
+    }
+    #section2>div:nth-child(1){
+        width: 100vw;
+        padding-top: 20px;
+    }
+    #section2>div:nth-child(2){
+        text-align: center;
+        /*padding-top: 20vh;*/
+    }
+}
+@media screen and (max-width:930px){
+    #section2{
+        /*background: url("images/mobile_bg.png");*/
+        background: url("images/small_screen_bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex-direction: column-reverse;
+    }
+}

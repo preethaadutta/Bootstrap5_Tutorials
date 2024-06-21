@@ -1,0 +1,116 @@
+.navbar{
+    /*background-color: aqua;*/
+    background: linear-gradient(to bottom,rgb(213, 80, 250),rgb(252, 87, 175));
+    --bs-navbar-color: rgb(253, 216, 93);/*changing font color*/
+    --bs-navbar-hover-color: yellow;
+    --bs-navbar-active-color: yellow;
+}
+.navbar-brand{
+    color: yellow;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva;
+}
+.navbar-brand:hover{
+    color: yellow;
+}
+.nav-item{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva;
+}
+.dropdown-menu{
+    background: linear-gradient(to bottom,rgb(213, 80, 250),rgb(252, 87, 175));
+    border: none;
+    border-radius: 0;
+}
+.dropdown-item{
+    color: rgb(253, 216, 93);
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva;
+}
+.dropdown-item:hover {
+    color: yellow;
+    background-color: transparent;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    color: rgb(253, 216, 93);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /*background-color: var(--bs-body-bg);*/
+    background-color: transparent;
+    background-clip: padding-box;
+    border: none;
+    border-bottom: 2px solid rgb(253, 216, 93);
+    border-radius: 0;
+    /*transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;*/
+}
+.form-control:focus,.form-control:active{
+    border-bottom: 2px solid yellow;
+}
+/*
+input{
+    color: #FFD43B;
+}
+input[type="search"]{
+    color: #FFD43B;
+}
+*/
+input[type="search"]{
+    color: #FFD43B;
+}
+input[type="search"]{
+    caret-color: yellow;
+}
+input[type="search"]::placeholder {
+    color: #FFD43B;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva;
+}
+/*to remove ugly blue line that comes with each input feild in Bootstrap*/
+input:focus,input:active {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+/*hamburgur menu customisation*/
+.navbar-toggler{
+    border: none;
+    outline: none;
+}
+.navbar-toggler:focus
+{
+    outline: none !important;
+    box-shadow: none !important;
+}
+/*removing default hamburgur menu*/
+.navbar-toggler-icon{
+    background-image: none;
+}
+.navbar-toggler-icon>i{
+    color: #FFD43B;
+}
+.navbar-toggler-icon>i:hover{
+    color: yellow;
+}
+.btn{
+    border: none;
+    color: #FFD43B;
+}
+.btn>i{
+    color: #FFD43B;
+}
+.btn>i:hover{
+    background-color: transparent;
+    color: yellow;
+}
